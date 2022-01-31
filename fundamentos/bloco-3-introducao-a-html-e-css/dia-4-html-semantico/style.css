@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(18, 23, 46);
+    color:white;
+}
+b, i{
+    color:turquoise;
+}
+table, th, td{
+    border: 2px solid turquoise;
+    background-color: rgb(77, 55, 156);
+
+}
+header{
+    background-image: url(fotos/camarao-roxo.jpg);
+    background-size: cover;
+    padding-bottom:300px;
+    background-position:100% top;
+    border-bottom:2px solid turquoise;
+}
+
+header h1{
+    color: turquoise;
+    font-size: 70px;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    padding: 30px 60px 20px;
+    font-weight: bold;
+    line-height: 100px;
+    background-color: rgb(77, 55, 156);
+    display: inline-block;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+    border:2px turquoise solid;
+
+}
+nav{
+   background-color: rgb(77, 55, 156);
+   padding: 20px;
+   border:2px turquoise solid; 
+}
+nav li{
+    display: inline-block;
+    border-radius: 50px;
+    background-color: rgb(77, 55, 156);
+    margin-left: 50px;
+    padding:10px;
+    color:white;
+    border: 2px solid turquoise;
+}
+nav li:hover{
+    background-color: turquoise;
+}
+
+.header-2 {
+    margin-top: 70px;
+    margin-bottom: 60px;
+    background-color: rgb(77, 55, 156);
+    width: 500px ;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 50px 50px 0;
+    border: 2px solid turquoise;
+     
+}
+section p{
+    background-color: rgb(77, 55, 156);
+    margin-left:20px; 
+    margin-top:20px;
+    height: 70px;
+    border-radius: 0 50px 50px ;
+    width: 1100px;
+}
+.text-3{
+    background-color: rgb(77, 55, 156);
+    margin-left:20px; 
+    margin-top:20px;
+    height: 60px;
+    border-radius: 0 50px 50px ;
+    width: 1100px;
+}
+section h3{
+    margin-top: 50px;
+    margin-left: 40px;
+    padding: 20px;
+    border-radius: 50px 50px 0 0;
+    background-color: rgb(77, 55, 156);
+    border: 2px solid turquoise;
+    width: 450px;
+    text-align: center;
+    font-weight: bold;
+}
+.section-3-table{
+    width: 487px;
+}
+.image-1{
+    position: absolute;
+    left: 900px;
+    top: 950px;
+
+    border-radius: 50px;
+    border: 2px solid turquoise;
+}
+.image-2{
+    position:absolute;
+    left: 900px;
+    top: 1480px;
+    border-radius: 50px;
+    border: 2px solid turquoise;
+}
+.image-3{
+    position:absolute;
+    left: 970px;
+    top: 1890px;
+    border-radius: 50px;
+    border: 2px solid turquoise;
+}
+.text-border{
+    border: 2px solid turquoise;
+    background-color: rgb(77, 55, 156);
+    width: 1270px;
+    border-radius: 0 50px 50px;
+    margin-left: 40px;
+}
+.text-border-2{
+    border: 2px solid turquoise;
+    background-color: rgb(77, 55, 156);
+    width: 1400px;
+    border-radius: 0 50px 50px;
+    margin-left: 40px;
+    height: 300px;
+}
+.tabela{
+    margin-left:40px
+}
+.link-soco{
+    border-radius: 50px;
+    background-color: rgb(77, 55, 156);
+    margin-left: 330px;
+    padding:10px;
+    color:white;
+    border: 2px solid turquoise;
+    top: 1700px;
+    position: absolute;
+    text-decoration: none;
+    font-weight:bold;
+}
+.link-soco:hover{
+    background-color: turquoise;
+    border:2px solid turquoise;
+}
+.referencia{
+    background-color: rgb(77, 55, 156);
+    color:turquoise;
+    text-decoration: none;
+    margin-left:40px;
+    border: 2px solid turquoise;
+    border-radius: 0 0 50px 50px;
+    width: 490px;
+    height: 85px;
+}
+ul li{
+    color:white;
+    text-decoration: none;
+    margin-left:40px
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color:rgb(77, 55, 156);
+    width: 500px;
+    margin: 20px auto 20px;
+    border-radius: 50px;
+    border:2px inset turquoise;
+    font-weight: bold;
+}
