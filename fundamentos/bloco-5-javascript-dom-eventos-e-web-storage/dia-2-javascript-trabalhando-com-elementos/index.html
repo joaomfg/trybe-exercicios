@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  
+</head>
+<body>
+    <script>
+      //PARTE 1:
+      // 1
+      let header = document.createElement('h1');
+      let body = document.querySelector('body');
+      header.innerText = 'Exercício 5.2 - JavaScript DOM'
+      body.appendChild(header);
+
+      // 2
+      let main = document.createElement('main');
+      main.classList = 'main-content';
+      body.appendChild(main);
+
+      // 3
+      let sectionCenter = document.createElement('section');
+      sectionCenter.classList = 'center-content';
+      main.appendChild(sectionCenter)
+
+      // 4
+      let p = document.createElement('p');
+      p.innerText = 'Oi eu sou o Goku!';
+      sectionCenter.appendChild(p)
+
+      // 5
+      let sectionLeft = document.createElement('section');
+      sectionLeft.classList = 'left-content';
+      main.appendChild(sectionLeft);
+
+      // 6
+      let sectionRight = document.createElement('section');
+      sectionRight.classList = 'right-content';
+      main.appendChild(sectionRight);
+
+      // 7 
+      let img = document.createElement('img');
+      img.classList = 'small-image';
+      img.src = 'https://picsum.photos/200'
+      sectionLeft.appendChild(img)
+
+      // 8
+      let ul = document.createElement('ul');
+      
+      let numbers = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+
+      for (let i in numbers) {
+          let li = document.createElement('li');
+          li.innerText = numbers[i];
+          ul.appendChild(li);  
+      }
+
+      sectionRight.appendChild(ul);
+
+      // 9
+      for (let i = 1; i <= 3; i += 1) {
+          let h3 = document.createElement('h3');
+          main.appendChild(h3);
+      }
+
+      //PARTE 2:
+      // 1
+      header.classList = 'title';
+
+      // 2
+      let cacthH3 = document.querySelectorAll('h3');
+
+      for (let i in cacthH3) {
+          cacthH3[i].classList = 'description'
+          cacthH3[i].innerText = 'Golden Experience Requiem!!!'
+      }
+      
+      // 3
+      main.removeChild(sectionLeft)
+
+      // 4
+      sectionRight.style.marginRight = 'auto';
+
+      // 5
+      let parent = sectionCenter.parentElement;
+      parent.style.backgroundColor = 'green'
+
+      // 6
+      ul.lastChild.remove();
+      ul.lastChild.remove();
+    </script>
+
+  </body>
+</html>
