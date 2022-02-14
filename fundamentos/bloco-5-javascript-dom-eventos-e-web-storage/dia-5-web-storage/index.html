@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <title>Exercicio de Local Storage</title>
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 20px 0 0 15px;
+      }
+
+      main {
+          display: flex;
+          justify-content: space-between;
+      }
+      
+      main h1,
+      p {
+        margin-bottom: 20px;
+      }
+
+      .content-section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+      }
+
+      aside {
+        width: 20%;
+        margin-left: 30px;
+        padding: 10px;
+      }
+
+      aside h3,
+      h2 {
+        margin-top: 10px;
+      }
+    </style>
+
+    <main>
+      <section class="content-section">
+        <h1>Lorem Ipsum</h1>
+        <p id="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          congue quam quis sapien finibus viverra. Cras vulputate purus eget
+          nulla sodales, ut tincidunt elit finibus. Donec lobortis massa nec
+          dolor imperdiet euismod. Quisque at nisi leo. Vestibulum ante ipsum
+          primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis
+          id lacinia ligula. Aenean ac urna faucibus, congue ex nec,
+          pellentesque orci. Phasellus vitae justo ante. Phasellus quis tellus
+          sed felis sodales aliquam et eget arcu. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Aenean suscipit sapien ipsum, id gravida
+          nibh dictum vitae. Maecenas purus sapien, porttitor vel sapien varius,
+          imperdiet laoreet dui. Maecenas nec purus ac est tincidunt vestibulum
+          sit amet a odio. Suspendisse potenti. Nullam faucibus tortor ex, id
+          viverra nunc posuere tincidunt. Orci varius natoque penatibus et
+          magnis dis parturient montes, nascetur ridiculus mus. Aenean bibendum
+          vulputate nisl egestas imperdiet. Fusce sit amet orci nunc. Nulla
+          congue orci tellus, a consectetur nisl viverra id. Donec in purus ac
+          felis interdum mollis. Fusce semper, ante in tincidunt iaculis, lacus
+          eros pharetra nisi, finibus interdum massa nunc sed dui. Sed
+          efficitur, lacus eget pellentesque dictum, justo odio viverra urna, in
+          tincidunt est risus eget diam. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia curae; Fusce in
+          faucibus metus. Maecenas pulvinar purus eu lacus pretium, ut lobortis
+          ex molestie. Duis eleifend mattis urna ut rhoncus. Quisque blandit
+          condimentum dolor in imperdiet. Praesent sed porttitor augue, ac
+          elementum purus. Aenean sodales ligula eget nunc condimentum rutrum.
+          Integer fringilla ornare ornare. Sed accumsan arcu nec enim
+          sollicitudin tempus a quis ante. Aliquam diam mauris, congue at
+          vehicula a, ullamcorper vel nisi. Cras et elit nunc. Fusce vel
+          accumsan nibh. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Nullam at quam hendrerit diam tincidunt tempus at eu nibh.
+          Proin scelerisque consectetur rutrum. Vestibulum eget congue libero.
+          Fusce ornare neque risus, eu ullamcorper quam pellentesque non.
+          Quisque urna diam, gravida vitae ante nec, dignissim facilisis mauris.
+          Sed ac euismod libero. Nunc nec vehicula odio. Cras scelerisque
+          suscipit leo. Duis congue a ex ullamcorper pellentesque. Maecenas at
+          arcu blandit tellus varius gravida. Cras scelerisque porttitor sapien
+          non interdum. Curabitur lorem nulla, efficitur eget volutpat a, auctor
+          vitae magna. Quisque id lobortis metus. Curabitur mollis augue eu
+          magna gravida consectetur sed ac nunc. Morbi nec facilisis lorem.
+          Quisque at nulla ut tellus tempor finibus. Pellentesque finibus ante
+          augue, hendrerit lacinia lorem vulputate vitae. Nunc semper elementum
+          orci sed dignissim. Aenean pulvinar sem id tristique tempor. Integer
+          et bibendum orci, pharetra dapibus nibh. Nulla vehicula iaculis eros
+          vitae tempus.
+        </p>
+      </section>
+
+      <aside>
+        <h2>Personalização da Pagina:</h2>
+        <h3>Cor de Fundo:</h3>
+        <div id="btn-div">
+          <button id="red">Red</button>
+          <button id="blue">Blue</button>
+          <button id="yellow">Yellow</button>
+          <button id="green">Green</button>
+          <button id="white">White</button>
+        </div>
+
+        <h3>Tamanho da Fonte:</h3>
+        <div id="fontBtn">
+          <button>Pequeno</button>
+          <button>Normal</button>
+          <button>Grande</button>
+        </div>
+        
+        <h3>Espaço entre as linhas:</h3>
+        <div id="space-btn">
+            <button>Normal</button>
+            <button>Maior</button>
+        </div>
+        
+        <h3>Tipo da Fonte:</h3>
+        <div id="font-btn">
+            <button>Arial</button>
+            <button>Times New Roman</button>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
