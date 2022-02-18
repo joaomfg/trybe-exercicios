@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio/6.1</title>
+  </head>
+
+  <body>
+    <style>
+      .radio {
+        display: inline-block;
+      }
+    </style>
+
+    <header>
+      <h1>TrybeTrip</h1>
+    </header>
+    <form action="" method="get">
+      <fieldset>
+        <section>
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            minlength="10"
+            maxlength="40"
+            id="name"
+            required
+          /><br /><br />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            minlength="10"
+            maxlength="50"
+            id="email"
+            required
+          /><br /><br />
+        </section>
+
+        <section>
+          <input type="radio" name="local" id="city" />
+          <label class="radio" for="city">Cidade</label>
+
+          <input type="radio" name="local" id="camp" />
+          <label class="radio" for="camp">Campo</label>
+
+          <input type="radio" name="local" id="beach" />
+          <label class="radio" for="beach">Praia</label>
+
+          <input type="radio" name="local" id="montain" />
+          <label class="radio" for="montain">Montanhas</label>
+        </section>
+        <br />
+
+        <section>
+          <label for=""
+            >Por que você deveria ser a pessoa desenvolvedora a ganhar o
+            concurso TrybeTrip?</label
+          ><br />
+          <textarea
+            name=""
+            id="text-area"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            placeholder="Digite sua resposta aqui!"
+            required
+          ></textarea>
+        </section>
+
+        <label for="">Data:</label>
+        <input type="date" name="" id="" required /><br /><br />
+
+        <section>
+          <label for=""
+            >Gostaria de receber outras incríveis oportunidades oferecidas pela
+            Trybe?</label
+          ><br />
+          <input type="checkbox" name="" id="" required />Concordo<br /><br />
+
+          <label for=""
+            >Concordo que imagens das minhas férias poderão ser usadas na
+            divulgação de concursos futuros.</label
+          ><br />
+          <input type="checkbox" name="" id="" required />Concordo
+        </section>
+      </fieldset>
+
+      <section>
+        <button type="submit" id="submit">Enviar</button>
+
+        <button type="reset">Limpar</button>
+      </section>
+    </form>
+    
+    <script>
+      const btn = document
+        .getElementById("submit")
+        .addEventListener("click", (event) => {
+          event.preventDefault();
+        });
+    </script>
+  </body>
+</html>
