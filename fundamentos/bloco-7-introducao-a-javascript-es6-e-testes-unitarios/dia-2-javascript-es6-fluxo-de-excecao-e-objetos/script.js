@@ -107,57 +107,89 @@ const lesson1 = {
     turno: 'noite',
   };
 
-  const changeObj = (obj, key, value) => {
-    return obj[key] = value;
-  }
-  changeObj(lesson2, 'turno', 'noite');
+//   const changeObj = (obj, key, value) => {
+//     return obj[key] = value;
+//   }
+//   changeObj(lesson2, 'turno', 'noite');
 
-  ////////////////////////////////
+//   ////////////////////////////////
 
-  const objKeys = (obj) => {
-    return Object.keys(obj); 
-  }
-  console.log(objKeys(lesson1))
+//   const objKeys = (obj) => {
+//     return Object.keys(obj); 
+//   }
+//   console.log(objKeys(lesson1))
 
-    ////////////////////////////////
+//     ////////////////////////////////
 
-  function objSize(obj) {
-    return Object.keys(obj).length
-  }
-  console.log(objSize(lesson1));
+//   function objSize(obj) {
+//     return Object.keys(obj).length
+//   }
+//   console.log(objSize(lesson1));
 
-  ////////////////////////////////
+//   ////////////////////////////////
 
   const allLessons = {lesson1, lesson2, lesson3}
   Object.assign({}, allLessons);
-  console.log(allLessons);
+//   console.log(allLessons);
 
-  ////////////////////////////////
+//   ////////////////////////////////
 
-  function students(obj) {
-    return allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes
-  }
-  console.log(students(allLessons));
+//   function students(obj) {
+//     return allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes
+//   }
+//   console.log(students(allLessons));
 
-    ////////////////////////////////
+//     ////////////////////////////////
 
-  function getValue(obj, key) {
-    const oi = Object.values(obj);
-    return oi[key]
-  }
-  console.log(getValue(lesson1, 2));
+//   function getValue(obj, key) {
+//     const oi = Object.values(obj);
+//     return oi[key]
+//   }
+//   console.log(getValue(lesson1, 2));
 
-    ////////////////////////////////
+//     ////////////////////////////////
 
-  function verifyObj(obj, key, value) {
-    const arr = Object.entries(obj);
-    let result = false;
+//   function verifyObj(obj, key, value) {
+//     const arr = Object.entries(obj);
+//     let result = false;
 
-    for (let i in arr) {
-        if (arr[i][0] === key && arr[i][1] === value) {
-            result = true;
+//     for (let i in arr) {
+//         if (arr[i][0] === key && arr[i][1] === value) {
+//             result = true;
+//         }
+//     }
+//     return result
+//   }
+//   console.log(verifyObj(lesson3, 'turno', 'noite'));
+
+// Parte Bonus
+
+  function studentsMath(obj) {
+    const oi = Object.keys(obj);
+    let result = 0;
+
+    for (let i in oi) {
+        if (allLessons[oi[i]].materia === 'Matemática') {
+            result += allLessons[oi[i]].numeroEstudantes; 
         }
     }
-    return result
+    return result;
   }
-  console.log(verifyObj(lesson3, 'turno', 'noite'));
+  console.log(studentsMath(allLessons))
+
+  ////////////////////////////////
+  
+  function report(obj, prof) {
+    let result = {};
+    const oi = Object.keys(obj);
+
+    for (let i in oi) {
+        const keys = Object.values(obj[oi[i]]);
+        for (let j in keys) {
+            if(keys[j] === prof) {
+                return Object.assign(result, obj[oi[i]])
+            }
+        }
+    }
+  }
+  console.log(report(allLessons, 'Maria Clara'))
